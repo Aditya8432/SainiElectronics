@@ -29,11 +29,19 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        $user = Auth::user();
+        $session = Auth::user();
 
-        // echo "<pre>";
-        // print_r($user);
-        // die;
+        // if($session->is_admin == 1){
+        //         echo "<pre>";
+        //         print_r("You Are Admin");
+        //         die;
+        // }else{
+        //     echo "<pre>";
+        //     print_r("You Are Customer");
+        //     die;
+        // }
+
+        
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 

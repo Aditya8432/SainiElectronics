@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
-    <link href="../../css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/chosen.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery.scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/lightbox.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/megamenu.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/dreaming-attribute.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="{{url('/')}}/webAssets/images/favicon.png">
+    <link href="{{url('/')}}/webAssets/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/chosen.min.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/jquery.scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/fonts/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/megamenu.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/dreaming-attribute.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/style.css">
     <title>Kobolg - HTML Template </title>
 </head>
 <body>
@@ -35,14 +35,14 @@
                     <ul class="wpml-menu">
                         <li class="menu-item kobolg-dropdown block-language">
                             <a href="#" data-kobolg="kobolg-dropdown">
-                                <img src="assets/images/en.png" alt="en" width="18" height="12">
+                                <img src="{{url('/')}}/webAssets/images/en.png" alt="en" width="18" height="12">
                                 English
                             </a>
                             <span class="toggle-submenu"></span>
                             <ul class="sub-menu">
                                 <li class="menu-item">
                                     <a href="#">
-                                        <img src="assets/images/it.png" alt="it" width="18" height="12">
+                                        <img src="{{url('/')}}/webAssets/images/it.png" alt="it" width="18" height="12">
                                         Italiano
                                     </a>
                                 </li>
@@ -79,7 +79,7 @@
                         </a>
                     </div>
                     <div class="header-logo">
-                        <a href="index.html"><img alt="Kobolg" src="assets/images/logo.png" class="logo"></a></div>
+                        <a href="index.html"><img alt="Kobolg" src="{{url('/')}}/webAssets/images/logo.png" class="logo"></a></div>
                 </div>
                 <div class="header-search-mid">
                     <div class="header-search">
@@ -155,21 +155,21 @@
                                             <li class="kobolg-mini-cart-item mini_cart_item">
                                                 <a href="#" class="remove remove_from_cart_button">×</a>
                                                 <a href="#">
-                                                    <img src="assets/images/apro134-1-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">T-shirt with skirt – Pink&nbsp;
+                                                    <img src="{{url('/')}}/webAssets/images/apro134-1-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">T-shirt with skirt – Pink&nbsp;
                                                 </a>
                                                 <span class="quantity">1 × <span class="kobolg-Price-amount amount"><span class="kobolg-Price-currencySymbol">$</span>150.00</span></span>
                                             </li>
                                             <li class="kobolg-mini-cart-item mini_cart_item">
                                                 <a href="#" class="remove remove_from_cart_button">×</a>
                                                 <a href="#">
-                                                    <img src="assets/images/apro1113-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">Red Consoles&nbsp;
+                                                    <img src="{{url('/')}}/webAssets/images/apro1113-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">Red Consoles&nbsp;
                                                 </a>
                                                 <span class="quantity">1 × <span class="kobolg-Price-amount amount"><span class="kobolg-Price-currencySymbol">$</span>129.00</span></span>
                                             </li>
                                             <li class="kobolg-mini-cart-item mini_cart_item">
                                                 <a href="#" class="remove remove_from_cart_button">×</a>
                                                 <a href="#">
-                                                    <img src="assets/images/apro201-1-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">Smart Monitor&nbsp;
+                                                    <img src="{{url('/')}}/webAssets/images/apro201-1-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">Smart Monitor&nbsp;
                                                 </a>
                                                 <span class="quantity">1 × <span class="kobolg-Price-amount amount"><span class="kobolg-Price-currencySymbol">$</span>139.00</span></span>
                                             </li>
@@ -237,7 +237,7 @@
                                                     <div class="dreaming_single_image dreaming_content_element az_align_left shadow-img">
                                                         <figure class="dreaming_wrapper az_figure">
                                                             <a href="index.html" target="_self" class="az_single_image-wrapper az_box_border_grey effect normal-effect dark-bg">
-                                                                <img src="assets/images/demo001.jpg" class="az_single_image-img attachment-full" alt="img">
+                                                                <img src="{{url('/')}}/webAssets/images/demo001.jpg" class="az_single_image-img attachment-full" alt="img">
                                                             </a>
                                                         </figure>
                                                     </div>
@@ -249,7 +249,7 @@
                                                     <div class="dreaming_single_image dreaming_content_element az_align_left shadow-img">
                                                         <figure class="dreaming_wrapper az_figure">
                                                             <a href="home-02.html" target="_self" class="az_single_image-wrapper az_box_border_grey effect normal-effect dark-bg ">
-                                                                <img src="assets/images/demo002.jpg" class="az_single_image-img attachment-full" alt="img"></a>
+                                                                <img src="{{url('/')}}/webAssets/images/demo002.jpg" class="az_single_image-img attachment-full" alt="img"></a>
                                                         </figure>
                                                     </div>
                                                     <h5 class="az_custom_heading">
@@ -260,7 +260,7 @@
                                                     <div class="dreaming_single_image dreaming_content_element az_align_left shadow-img">
                                                         <figure class="dreaming_wrapper az_figure">
                                                             <a href="home-03.html" target="_self" class="az_single_image-wrapper az_box_border_grey effect normal-effect dark-bg">
-                                                                <img src="assets/images/demo003.jpg" class="az_single_image-img attachment-full" alt="img">
+                                                                <img src="{{url('/')}}/webAssets/images/demo003.jpg" class="az_single_image-img attachment-full" alt="img">
                                                             </a>
                                                         </figure>
                                                     </div>
@@ -272,7 +272,7 @@
                                                     <div class="dreaming_single_image dreaming_content_element az_align_left shadow-img">
                                                         <figure class="dreaming_wrapper az_figure">
                                                             <a href="home-04.html" target="_self" class="az_single_image-wrapper az_box_border_grey effect normal-effect dark-bg ">
-                                                                <img src="assets/images/demo004.jpg" class="az_single_image-img attachment-full" alt="img">
+                                                                <img src="{{url('/')}}/webAssets/images/demo004.jpg" class="az_single_image-img attachment-full" alt="img">
                                                             </a>
                                                         </figure>
                                                     </div>
@@ -283,7 +283,7 @@
                                                     <div class="dreaming_single_image dreaming_content_element az_align_left shadow-img">
                                                         <figure class="dreaming_wrapper az_figure">
                                                             <a href="home-05.html" target="_self" class="az_single_image-wrapper az_box_border_grey effect normal-effect dark-bg">
-                                                                <img src="assets/images/demo005.jpg" class="az_single_image-img attachment-full" alt="img">
+                                                                <img src="{{url('/')}}/webAssets/images/demo005.jpg" class="az_single_image-img attachment-full" alt="img">
                                                             </a>
                                                         </figure>
                                                     </div>
@@ -295,7 +295,7 @@
                                                     <div class="dreaming_single_image dreaming_content_element az_align_left shadow-img">
                                                         <figure class="dreaming_wrapper az_figure">
                                                             <a href="home-06.html" target="_self" class="az_single_image-wrapper az_box_border_grey effect normal-effect dark-bg ">
-                                                                <img src="assets/images/demo006.jpg" class="az_single_image-img attachment-full" alt="img">
+                                                                <img src="{{url('/')}}/webAssets/images/demo006.jpg" class="az_single_image-img attachment-full" alt="img">
                                                             </a>
                                                         </figure>
                                                     </div>
@@ -323,7 +323,7 @@
                                                             <li>
                                                                 <a href="shop-list.html" target="_self">
                                                                     <span class="image">
-                                                                        <img src="assets/images/label-new.jpg" class="attachment-full size-full" alt="img">
+                                                                        <img src="{{url('/')}}/webAssets/images/label-new.jpg" class="attachment-full size-full" alt="img">
                                                                     </span>
                                                                     Shop List
                                                                 </a>
@@ -353,7 +353,7 @@
                                                             <li>
                                                                 <a href="single-product-policy.html" target="_self">
                                                                     <span class="image">
-                                                                        <img src="assets/images/label-new.jpg" class="attachment-full size-full" alt="img">
+                                                                        <img src="{{url('/')}}/webAssets/images/label-new.jpg" class="attachment-full size-full" alt="img">
                                                                     </span>
                                                                     Extra Sidebar
                                                                 </a>
@@ -379,7 +379,7 @@
                                                             <li>
                                                                 <a href="single-product-bundle.html" target="_self">
                                                                             <span class="image">
-                                                                                <img src="assets/images/label-new.jpg" class="attachment-full size-full" alt="img">
+                                                                                <img src="{{url('/')}}/webAssets/images/label-new.jpg" class="attachment-full size-full" alt="img">
                                                                             </span>
                                                                     Product Bundle
                                                                 </a>
@@ -387,7 +387,7 @@
                                                             <li>
                                                                 <a href="single-product-360deg.html" target="_self">
                                                                     <span class="image">
-                                                                        <img src="assets/images/label-hot.jpg" class="attachment-full size-full" alt="img">
+                                                                        <img src="{{url('/')}}/webAssets/images/label-hot.jpg" class="attachment-full size-full" alt="img">
                                                                     </span>
                                                                     Product 360 Deg </a>
                                                             </li>
@@ -435,7 +435,7 @@
                                                             </li>
                                                             <li>
                                                                 <a href="single-product.html" target="_self">
-                                                                            <span class="image"><img src="assets/images/label-hot.jpg" class="attachment-full size-full" alt="img"></span>
+                                                                            <span class="image"><img src="{{url('/')}}/webAssets/images/label-hot.jpg" class="attachment-full size-full" alt="img"></span>
                                                                     Variable </a>
                                                             </li>
                                                             <li>
@@ -597,7 +597,7 @@
                                                             <li>
                                                                 <a href="single-post-instagram.html" target="_self">
                                                                     <span class="image">
-                                                                        <img src="assets/images/label-hot.jpg" class="attachment-full size-full" alt="img">
+                                                                        <img src="{{url('/')}}/webAssets/images/label-hot.jpg" class="attachment-full size-full" alt="img">
                                                                     </span>
                                                                     Instagram In Post
                                                                 </a>
@@ -605,7 +605,7 @@
                                                             <li>
                                                                 <a href="single-post-product.html" target="_self">
                                                                     <span class="image">
-                                                                        <img src="assets/images/label-new.jpg" class="attachment-full size-full" alt="img">
+                                                                        <img src="{{url('/')}}/webAssets/images/label-new.jpg" class="attachment-full size-full" alt="img">
                                                                     </span>
                                                                     Product In Post
                                                                 </a>
@@ -627,7 +627,7 @@
                                                             <li>
                                                                 <a href="single-post-video.html" target="_self">
                                                                     <span class="image">
-                                                                        <img src="assets/images/label-hot.jpg" class="attachment-full size-full" alt="img">
+                                                                        <img src="{{url('/')}}/webAssets/images/label-hot.jpg" class="attachment-full size-full" alt="img">
                                                                     </span>
                                                                     Video
                                                                 </a>
@@ -708,14 +708,14 @@
             <ul class="wpml-menu">
                 <li class="menu-item kobolg-dropdown block-language">
                     <a href="#" data-kobolg="kobolg-dropdown">
-                        <img src="assets/images/en.png" alt="en" width="18" height="12">
+                        <img src="{{url('/')}}/webAssets/images/en.png" alt="en" width="18" height="12">
                         English
                     </a>
                     <span class="toggle-submenu"></span>
                     <ul class="sub-menu">
                         <li class="menu-item">
                             <a href="#">
-                                <img src="assets/images/it.png" alt="it" width="18" height="12">
+                                <img src="{{url('/')}}/webAssets/images/it.png" alt="it" width="18" height="12">
                                 Italiano
                             </a>
                         </li>
@@ -739,7 +739,7 @@
         </div>
         <div class="header-mobile-mid">
             <div class="header-logo">
-                <a href="index.html"><img alt="Kobolg" src="assets/images/logo.png" class="logo"></a></div>
+                <a href="index.html"><img alt="Kobolg" src="{{url('/')}}/webAssets/images/logo.png" class="logo"></a></div>
         </div>
         <div class="header-mobile-right">
             <div class="header-control-inner">
@@ -783,21 +783,21 @@
                                     <li class="kobolg-mini-cart-item mini_cart_item">
                                         <a href="#" class="remove remove_from_cart_button">×</a>
                                         <a href="#">
-                                            <img src="assets/images/apro134-1-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">T-shirt with skirt – Pink&nbsp;
+                                            <img src="{{url('/')}}/webAssets/images/apro134-1-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">T-shirt with skirt – Pink&nbsp;
                                         </a>
                                         <span class="quantity">1 × <span class="kobolg-Price-amount amount"><span class="kobolg-Price-currencySymbol">$</span>150.00</span></span>
                                     </li>
                                     <li class="kobolg-mini-cart-item mini_cart_item">
                                         <a href="#" class="remove remove_from_cart_button">×</a>
                                         <a href="#">
-                                            <img src="assets/images/apro1113-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">Red Consoles&nbsp;
+                                            <img src="{{url('/')}}/webAssets/images/apro1113-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">Red Consoles&nbsp;
                                         </a>
                                         <span class="quantity">1 × <span class="kobolg-Price-amount amount"><span class="kobolg-Price-currencySymbol">$</span>129.00</span></span>
                                     </li>
                                     <li class="kobolg-mini-cart-item mini_cart_item">
                                         <a href="#" class="remove remove_from_cart_button">×</a>
                                         <a href="#">
-                                            <img src="assets/images/apro201-1-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">Smart Monitor&nbsp;
+                                            <img src="{{url('/')}}/webAssets/images/apro201-1-600x778.jpg" class="attachment-kobolg_thumbnail size-kobolg_thumbnail" alt="img" width="600" height="778">Smart Monitor&nbsp;
                                         </a>
                                         <span class="quantity">1 × <span class="kobolg-Price-amount amount"><span class="kobolg-Price-currencySymbol">$</span>139.00</span></span>
                                     </li>

@@ -8,6 +8,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 
 class AuthenticatedSessionController extends Controller
@@ -31,23 +32,16 @@ class AuthenticatedSessionController extends Controller
 
         $session = Auth::user();
 
-        // if($session->is_admin == 1){
-        //         echo "<pre>";
-        //         print_r("You Are Admin");
-        //         die;
-        // }else{
-        //     echo "<pre>";
-        //     print_r("You Are Customer");
-        //     die;
-        // }
-
-        
-        return redirect()->intended(RouteServiceProvider::HOME);
+        if($session->is_admin == 1){
+            return Redirect::to('/adminDash'); // Redirect to admin dashboard URL
+        } else{
+            echo "<pre>";
+            print_r('You are in customer dashboard');
+            die;
+        }
+        // return redirect()->intended(RouteServiceProvider::HOME);
     }
 
-    /**
-     * Destroy an authenticated session.
-     */
     public function destroy(Request $request): RedirectResponse
     {
         Auth::guard('web')->logout();

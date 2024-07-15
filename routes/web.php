@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminDashController;
 use App\Http\Controllers\websiteController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DarkModeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[websiteController::class, 'index'])->name('layout.index');
+// for dark mode 
+Route::post('/toggle-dark-mode', [DarkModeController::class, 'toggle'])->name('toggle-dark-mode');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

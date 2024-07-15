@@ -117,5 +117,28 @@
 <script src="{{url('/')}}/webAssets/js/mobilemenu.js"></script>
 <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC3nDHy1dARR-Pa_2jjPCjvsOR4bcILYsM'></script>
 <script src="{{url('/')}}/webAssets/js/functions.js"></script>
+<script src="{{ mix('js/app.js') }}"></script>
+<script>
+        function toggleDarkMode() {
+            const body = document.body;
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            sunIcon.style.display = isDarkMode ? 'none' : 'inline';
+            moonIcon.style.display = isDarkMode ? 'inline' : 'none';
+
+            // Save the dark mode preference in the session
+            fetch('{{ route('toggle-dark-mode') }}', {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ dark_mode: isDarkMode }),
+            });
+        }
+    </script>
 </body>
 </html>

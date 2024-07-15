@@ -18,55 +18,11 @@
     <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/megamenu.css">
     <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/dreaming-attribute.css">
     <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{url('/')}}/webAssets/css/custom.css">
     <title>Kobolg - HTML Template </title>
 </head>
-<body>
+<body class="{{ session('dark_mode') ? 'dark-mode' : '' }}">
 <header id="header" class="header style-04 header-dark">
-    <div class="header-top">
-        <div class="container">
-            <div class="header-top-inner">
-                <ul id="menu-top-left-menu" class="kobolg-nav top-bar-menu">
-                    <li id="menu-item-864" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-864"><a class="kobolg-menu-item-title" title="Store Direction" href="#"><span class="icon flaticon-placeholder"></span>Store
-                        Direction</a></li>
-                    <li id="menu-item-865" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-865"><a class="kobolg-menu-item-title" title="Order Tracking" href="#"><span class="icon flaticon-box"></span>Order
-                        Tracking</a></li>
-                </ul>
-                <div class="kobolg-nav top-bar-menu right">
-                    <ul class="wpml-menu">
-                        <li class="menu-item kobolg-dropdown block-language">
-                            <a href="#" data-kobolg="kobolg-dropdown">
-                                <img src="{{url('/')}}/webAssets/images/en.png" alt="en" width="18" height="12">
-                                English
-                            </a>
-                            <span class="toggle-submenu"></span>
-                            <ul class="sub-menu">
-                                <li class="menu-item">
-                                    <a href="#">
-                                        <img src="{{url('/')}}/webAssets/images/it.png" alt="it" width="18" height="12">
-                                        Italiano
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <div class="wcml-dropdown product wcml_currency_switcher">
-                                <ul>
-                                    <li class="wcml-cs-active-currency">
-                                        <a class="wcml-cs-item-toggle">USD</a>
-                                        <ul class="wcml-cs-submenu">
-                                            <li>
-                                                <a>EUR</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="header-middle">
         <div class="container">
             <div class="header-middle-inner">
@@ -186,6 +142,10 @@
                             </div>
                         </div>
                     </div>
+                    <button id="darkModeToggle" onclick="toggleDarkMode()">
+                        <i class="fas fa-sun" id="sunIcon" style="display: {{ session('dark_mode') ? 'none' : 'inline' }}"></i>
+                        <i class="fas fa-moon" id="moonIcon" style="display: {{ session('dark_mode') ? 'inline' : 'none' }}"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -196,35 +156,6 @@
                 <div class="container">
                     <div class="kobolg-menu-wapper"></div>
                     <div class="header-nav-inner">
-                        <div data-items="8" class="vertical-wrapper block-nav-category has-vertical-menu show-button-all">
-                            <div class="block-title">
-                    <span class="before">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                                <span class="text-title">SHOP BY CATEGORIES</span>
-                            </div>
-                            <div class="block-content verticalmenu-content">
-                                <ul id="menu-vertical-menu" class="azeroth-nav vertical-menu default">
-                                    <li id="menu-item-886" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-886"><a class="azeroth-menu-item-title" title="Camera" href="#"><span class="icon flaticon-technology"></span>Camera</a></li>
-                                    <li id="menu-item-895" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-895"><a class="azeroth-menu-item-title" title="Game & Consoles" href="#"><span class="icon flaticon-console"></span>Game & Consoles</a>
-                                    </li>
-                                    <li id="menu-item-888" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-888"><a class="azeroth-menu-item-title" title="Printers & Ink" href="#"><span class="icon flaticon-print-button"></span>Printers & Ink</a></li>
-                                    <li id="menu-item-889" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-889"><a class="azeroth-menu-item-title" title="Speaker" href="#"><span class="icon flaticon-technology-1"></span>Speaker</a></li>
-                                    <li id="menu-item-890" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-890"><a class="azeroth-menu-item-title" title="Smartphone" href="#"><span class="icon flaticon-smartphone"></span>Smartphone</a></li>
-                                    <li id="menu-item-891" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-891"><a class="azeroth-menu-item-title" title="Accessories" href="#"><span class="icon flaticon-mouse"></span>Accessories</a></li>
-                                    <li id="menu-item-892" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-892"><a class="azeroth-menu-item-title" title="Essentials" href="#"><span class="icon flaticon-layers"></span>Essentials</a>
-                                    </li>
-                                    <li id="menu-item-893" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-893"><a class="azeroth-menu-item-title" title="Featured" href="#"><span class="icon flaticon-shapes"></span>Featured</a></li>
-                                    <li id="menu-item-894" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-894 link-other">
-                                        <a class="azeroth-menu-item-title" title="Best Seller" href="#"><span class="icon flaticon-shiny-diamond"></span> Seller</a></li>
-                                </ul>
-                                <div class="view-all-category">
-                                    <a href="#" data-closetext="Close" data-alltext="All Categories" class="btn-view-all open-cate">All Categories</a>
-                                </div>
-                            </div>
-                        </div><!-- block category -->
                         <div class="box-header-nav menu-nocenter">
                             <ul id="menu-primary-menu" class="clone-main-menu kobolg-clone-mobile-menu kobolg-nav main-menu">
                                 <li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu menu-item-has-children">

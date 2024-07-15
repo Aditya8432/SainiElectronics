@@ -1,0 +1,52 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Additional dark mode styles for Bootstrap components */
+.dark-mode .navbar {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .card {
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+
+.dark-mode .btn {
+    background-color: #4a4a4a;
+    color: #ffffff;
+}
+.dark-mode .kobolg-menu-item-title{
+    color:white;
+}
+.dark-mode .product-name{
+    color:white;
+}
+.dark-mode .section-014{
+    background-color:#121212;
+    color:white;
+}
+.dark-mode .title{
+    color:white;
+}
+.dark-mode .section-009{
+    background-color:#121212;
+    color:white;
+}
+.dark-mode .section-009 h4{
+    color:white;
+}
+.dark-mode .section-010{
+    background-color:#121212;
+    color:white;
+}
+.dark-mode .section-010 a{
+    color:white;
+}
+.dark-mode .flaticon-profile{
+    color:white;
+}
+.dark-mode .flaticon-online-shopping-cart{
+    color:white;
+}

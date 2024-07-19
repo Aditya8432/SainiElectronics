@@ -72,27 +72,15 @@
                     <div class="header-control-inner">
                         <div class="meta-dreaming">
                             <div class="menu-item block-user block-dreaming kobolg-dropdown">
-                                <a class="block-link" href="my-account.html">
+                                <a class="block-link" href="#">
                                     <span class="flaticon-profile"></span>
                                 </a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--dashboard is-active">
-                                        <a href="#">Dashboard</a>
-                                    </li>
-                                    <li class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--orders">
-                                        <a href="#">Orders</a>
-                                    </li>
-                                    <li class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--downloads">
-                                        <a href="#">Downloads</a>
-                                    </li>
+                                <ul class="sub-menu">                                    
                                     <li class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--edit-addresses">
-                                        <a href="#">Addresses</a>
+                                        <a href="">Profile</a>
                                     </li>
                                     <li class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--edit-account">
-                                        <a href="#">Account details</a>
-                                    </li>
-                                    <li class="menu-item kobolg-MyAccount-navigation-link kobolg-MyAccount-navigation-link--customer-logout">
-                                        <a href="#">Logout</a>
+                                        <a href="{{route('login')}}">Login</a>
                                     </li>
                                 </ul>
                             </div>
@@ -143,8 +131,8 @@
                         </div>
                     </div>
                     <button id="darkModeToggle" onclick="toggleDarkMode()">
-                        <i class="fas fa-sun" id="sunIcon" style="display: {{ session('dark_mode') ? 'none' : 'inline' }}"></i>
-                        <i class="fas fa-moon" id="moonIcon" style="display: {{ session('dark_mode') ? 'inline' : 'none' }}"></i>
+                        <i class="fa fa-sun-o" id="sunIcon" style="display: {{ session('dark_mode') ? 'inline' : 'none' }}" aria-hidden="true"></i>
+                        <i class="fa fa-moon-o" id="moonIcon" style="display: {{ session('dark_mode') ? 'none' : 'inline' }}"></i>
                     </button>
                 </div>
             </div>
@@ -157,7 +145,7 @@
                     <div class="kobolg-menu-wapper"></div>
                     <div class="header-nav-inner">
                         <div class="box-header-nav menu-nocenter">
-                            <ul id="menu-primary-menu" class="clone-main-menu kobolg-clone-mobile-menu kobolg-nav main-menu">
+                            <ul id="menu-primary-menu" class="clone-main-menu kobolg-clone-mobile-menu kobolg-nav main-menu {{ session('dark_mode') ? 'dark-mode' : '' }}">
                                 <li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-230 parent parent-megamenu item-megamenu menu-item-has-children">
                                     <a class="kobolg-menu-item-title" title="Home" href="index.html">Home</a>
                                     <span class="toggle-submenu"></span>
@@ -237,6 +225,15 @@
                                             </div>
                                         </div>
                                     </div>
+                                </li>
+                                <li>
+                                <div class="d-flex justify-content-between">
+                                    <h5>Dark Mode</h5>
+                                    <button id="darkModeToggle" onclick="toggleDarkMode()">
+                                    <i class="fa fa-sun-o" id="sunIcon" style="display: {{ session('dark_mode') ? 'inline' : 'none' }}" aria-hidden="true"></i>
+                                    <i class="fa fa-moon-o" id="moonIcon" style="display: {{ session('dark_mode') ? 'none' : 'inline' }}"></i>
+                                </button>
+                                </div>
                                 </li>
                                 <li id="menu-item-228" class="menu-item menu-item-type-post_type menu-item-object-megamenu menu-item-228 parent parent-megamenu item-megamenu menu-item-has-children">
                                     <a class="kobolg-menu-item-title" title="Shop" href="shop.html">Shop</a>

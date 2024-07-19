@@ -50,3 +50,13 @@ body.dark-mode {
 .dark-mode .flaticon-online-shopping-cart{
     color:white;
 }
+#darkModeToggle{
+    margin-left:12px;
+    background:#121212;
+}
+#sunIcon{
+    color:white;
+}
+#moonIcon{
+    color:white;
+}

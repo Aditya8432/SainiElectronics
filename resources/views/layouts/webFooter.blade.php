@@ -119,26 +119,28 @@
 <script src="{{url('/')}}/webAssets/js/functions.js"></script>
 <script src="{{ mix('js/app.js') }}"></script>
 <script>
-        function toggleDarkMode() {
-            const body = document.body;
-            const sunIcon = document.getElementById('sunIcon');
-            const moonIcon = document.getElementById('moonIcon');
+       function toggleDarkMode() {
+  const body = document.body;
+  const sunIcon = document.getElementById('sunIcon');
+  const moonIcon = document.getElementById('moonIcon');
 
-            body.classList.toggle('dark-mode');
-            const isDarkMode = body.classList.contains('dark-mode');
-            sunIcon.style.display = isDarkMode ? 'none' : 'inline';
-            moonIcon.style.display = isDarkMode ? 'inline' : 'none';
+  body.classList.toggle('dark-mode');
+  const isDarkMode = body.classList.contains('dark-mode');
 
-            // Save the dark mode preference in the session
-            fetch('{{ route('toggle-dark-mode') }}', {
-                method: 'POST',
-                headers: {
-                    'X-CSRF-TOKEN': '{{ csrf_token() }}',
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ dark_mode: isDarkMode }),
-            });
-        }
+  // Corrected conditions for icon display
+  sunIcon.style.display = isDarkMode ? 'inline' : 'none'; // Sun icon visible in dark mode
+  moonIcon.style.display = !isDarkMode ? 'inline' : 'none'; // Moon icon visible in light mode
+
+  // Save the dark mode preference in the session (assuming the route and CSRF token are set up correctly)
+  fetch('{{ route('toggle-dark-mode') }}', {
+    method: 'POST',
+    headers: {
+      'X-CSRF-TOKEN': '{{ csrf_token() }}',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ dark_mode: isDarkMode }),
+  });
+}
     </script>
 </body>
 </html>

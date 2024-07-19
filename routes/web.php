@@ -17,7 +17,6 @@ use App\Http\Controllers\DarkModeController;
 |
 */
 
-Route::get('/',[websiteController::class, 'index'])->name('layout.index');
 // for dark mode 
 Route::post('/toggle-dark-mode', [DarkModeController::class, 'toggle'])->name('toggle-dark-mode');
 
@@ -33,10 +32,10 @@ Route::middleware('auth')->group(function () {
 
     // Admin Dashboard Routes
     Route::get('/adminDash', [AdminDashController::class, 'index'])->name('admindash.index');
-    
-    
 });
-
+//Website Routes 
+Route::get('/',[websiteController::class, 'index'])->name('layout.index');
+Route::get('/shoping',[websiteController::class, 'shoping'])->name('layout.shop');
 
 // All routes
 
